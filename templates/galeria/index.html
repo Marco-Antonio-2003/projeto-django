@@ -1,37 +1,9 @@
 {% extends 'shared/base.html' %}
 {% load static %}
 {% block content %}
-
             <section class="conteudo">
-                {% for message in messages %}
-                    <div 
-                        style="--bs-alert-bg: transparent;
-                        --bs-alert-padding-x: 1rem;
-                        --bs-alert-padding-y: 1rem;
-                        --bs-alert-margin-bottom: 1rem;
-                        --bs-alert-color: inherit;
-                        --bs-alert-border-color: transparent;
-                        --bs-alert-border: 3px solid var(--bs-alert-border-color);
-                        --bs-alert-border-radius: 0.375rem;
-                        position: relative;
-                        padding: var(--bs-alert-padding-y) var(--bs-alert-padding-x);
-                        margin-bottom: var(--bs-alert-margin-bottom);
-                        margin-top: -10px; 
-                        color: var(--bs-alert-color);
-                        background-color: var(--bs-alert-bg);
-                        border: var(--bs-alert-border);
-                        border-radius: var(--bs-alert-border-radius);
-                        --bs-alert-color: #084298;
-                        --bs-alert-bg: #cfe2ff;
-                        --bs-alert-border-color: #b6d4fe;">
-
-                        <p id="messages">{{message}}</p>
-                            
-                    </div>
-                {%endfor%}
                 <section class="banner">
                     <img class="banner__imagem" src="{% static '/assets/imagens/Banner(2).png' %}" alt="banner Alura Space">
-                    
                     <h1 class="banner__titulo"> A galeria mais completa de fotos do espaço!</h1>
                 </section>
                 <section class="tags">
